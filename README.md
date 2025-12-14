@@ -1,4 +1,4 @@
-# 🚀 Pipeline ETL com Python (Santander Dev Week)
+# 🚀 Pipeline ETL com Python
 
 Este projeto é um pipeline de Engenharia de Dados completo (**E**xtract, **T**ransform, **L**oad) criado para automatizar a personalização de mensagens de marketing bancário.
 
