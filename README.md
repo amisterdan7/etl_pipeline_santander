@@ -14,10 +14,6 @@ O projeto segue o fluxo clássico de ETL:
 
 ---
 
-## 🛠️ Adaptações Técnicas (API Pública)
-
-Como o projeto original da Santander Dev Week utilizava uma API que foi descontinuada (offline), este projeto implementou uma solução robusta utilizando o **JSONPlaceholder**.
-
 ### Por que JSONPlaceholder?
 O [JSONPlaceholder](https://jsonplaceholder.typicode.com) é uma API REST pública utilizada para testes e prototipagem. Ela foi escolhida para este projeto porque:
 
