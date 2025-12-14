@@ -149,7 +149,6 @@ logs/
 *.log
 
 # API Keys and credentials
-.env
 .env.local
 .env.*.local
 config/credentials.json
