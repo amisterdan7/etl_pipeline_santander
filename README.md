@@ -38,3 +38,19 @@ sdw2023_api_url = '[https://jsonplaceholder.typicode.com](https://jsonplaceholde
 
 # Busca dados do usuário (ex: ID 4)
 response = requests.get(f'{sdw2023_api_url}/users/{id}')
+```
+
+### 2. Transformação (Transform)
+Nesta etapa, a lógica de enriquecimento de dados é aplicada. O objetivo é criar uma nova informação (notícia) para cada usuário extraído.
+
+Como adaptação para este ambiente de teste, utilizamos uma função que simula a IA Generativa, escolhendo aleatoriamente frases de marketing pré-definidas e personalizando-as com o nome do cliente.
+
+Também tratamos a estrutura do JSON (criando o campo news caso não exista), garantindo que o código funcione robustamente com a API do JSONPlaceholder.
+
+
+
+### 3. Carregamento (Load)
+A etapa final consiste em persistir os dados transformados. O script envia os dados atualizados de volta para a API através de requisições PUT.
+
+Na prática, com o JSONPlaceholder, a API recebe o payload e retorna um status de sucesso (200 OK), simulando que o banco de dados foi atualizado com a nova mensagem de marketing.
+
